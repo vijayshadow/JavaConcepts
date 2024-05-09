@@ -1,5 +1,6 @@
 package PracticeWorkspace;
 
+import java.lang.invoke.MethodHandles.Lookup.ClassOption;
 import java.util.Scanner;
 
 public class ReverseNumber {
@@ -19,6 +20,8 @@ public class ReverseNumber {
 		while (revnumber != 0) {
 			rev = rev * 10 + revnumber % 10;
 			revnumber = (revnumber / 10);
+			System.out.println("rev:"+rev);
+			System.out.println("revnumber:"+revnumber);
 		}
 
 		return (rev);
